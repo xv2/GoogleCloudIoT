@@ -1,9 +1,6 @@
 # How to use Google Cloud IoT with Ubuntu VirtualMachine (VirtualBox, VMware, Hyper-V and etc.)
 
-Original tutorial: https://cloud.google.com/community/tutorials/cloud-iot-gateways-rpi
-
-Repository `git clone https://github.com/GoogleCloudPlatform/community.git`
-
+Original tutorial: https://cloud.google.com/community/tutorials/cloud-iot-gateways-rpi and [repository](https://github.com/GoogleCloudPlatform/community/tree/master/tutorials/cloud-iot-gateways-rpi)
 
 ### Create virtual machine
 * Download and install `ubuntu-20.04.1-desktop-amd64.iso`
