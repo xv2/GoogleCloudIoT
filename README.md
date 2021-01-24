@@ -1,3 +1,5 @@
+# How to use Google Cloud IoT with Ubuntu VirtualMachine (VirtualBox, VMware, Hyper-V and etc.)
+
 Original tutorial: https://cloud.google.com/community/tutorials/cloud-iot-gateways-rpi
 
 Repository `git clone https://github.com/GoogleCloudPlatform/community.git`
@@ -12,11 +14,12 @@ Repository `git clone https://github.com/GoogleCloudPlatform/community.git`
 
 #### Steps in VirtualMachine:
 
+* `sudo apt install git`
 * `sudo apt install net-tools`
 * `sudo apt install python3`
 * `sudo apt install python3-pip`
 * `sudo apt install build-essential libssl-dev libffi-dev python3-dev`
-* `apt-get install python3-venv`
+* `sudo apt install python3-venv`
 * `git clone git@github.com:xv2/GoogleCloudIoT.git`
 * `cd GoogleCloudIoT/cloud-iot-gateways-rpi`
 * if needed regenerate your rsa keys `./generate_keys.sh` and set public key in your gateway authentication in Google Cloud IoT Console
@@ -31,12 +34,12 @@ Repository `git clone https://github.com/GoogleCloudPlatform/community.git`
 
 
 ##### Run gateway
-* open new terminal window `./cloud-iot-gateways-rpi`
+* open new terminal window in `./cloud-iot-gateways-rpi`
 * `source venv/bin/activate`
 * `source run-gateway`
 
 ##### Run run-led-light
-* open new terminal window `./cloud-iot-gateways-rpi`
+* open new terminal window in `./cloud-iot-gateways-rpi`
 * `source venv/bin/activate`
 * `source run-led-light`
 * you can `UPDATE CONFIG` in cloud console for your device (set `ON` or `OFF` configuration value and see result in ubuntu terminal)
