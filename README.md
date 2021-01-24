@@ -14,16 +14,11 @@ Repository `git clone https://github.com/GoogleCloudPlatform/community.git`
 
 #### Steps in VirtualMachine:
 
-* `sudo apt install git`
-* `sudo apt install net-tools`
-* `sudo apt install python3`
-* `sudo apt install python3-pip`
-* `sudo apt install build-essential libssl-dev libffi-dev python3-dev`
-* `sudo apt install python3-venv`
-* `git clone git@github.com:xv2/GoogleCloudIoT.git`
+* `sudo apt install git net-tools python3 python3-pip build-essential libssl-dev libffi-dev python3-dev python3-venv`
+* `git clone https://github.com/xv2/GoogleCloudIoT.git`
 * `cd GoogleCloudIoT/cloud-iot-gateways-rpi`
 * if needed regenerate your rsa keys `./generate_keys.sh` and set public key in your gateway authentication in Google Cloud IoT Console
-* set valid region if needed `--cloud_region=us-central1` in `./run-gateway` at line 20, also check `--registry_id`, `--gateway_id` and your can temporary set `--project_id` instead of use `export GOOGLE_CLOUD_PROJECT=your-project-id-123`
+* update `./run-gateway` if needed set valid region `--cloud_region=us-central1`, also check `--registry_id`, `--gateway_id` and your can temporary set `--project_id` instead of use `export GOOGLE_CLOUD_PROJECT=your-project-id-123`
 * `wget https://pki.goog/roots.pem`
 * `pip3 install virtualenv`
 * `python3 -m venv venv`
