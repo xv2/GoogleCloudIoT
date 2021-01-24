@@ -17,14 +17,14 @@ from __future__ import print_function
 import socket
 import sys
 
-import RPi.GPIO as GPIO
+# import RPi.GPIO as GPIO
 from colors import bcolors
 
 
 LED_IOPIN = 14
-GPIO.setmode(GPIO.BCM)
-GPIO.setwarnings(False)
-GPIO.setup(LED_IOPIN, GPIO.OUT)
+#GPIO.setmode(GPIO.BCM)
+#GPIO.setwarnings(False)
+#GPIO.setup(LED_IOPIN, GPIO.OUT)
 
 ADDR = ''
 PORT = 10000
@@ -81,12 +81,12 @@ try:
         response = client_sock.recv(4096).decode('utf8')
         print('Client received {}'.format(response))
         if response.upper() == 'ON' or response.upper() == b'ON':
-            GPIO.output(LED_IOPIN, GPIO.HIGH)
+#            GPIO.output(LED_IOPIN, GPIO.HIGH)
             sys.stdout.write('\r>> ' + bcolors.OKGREEN + bcolors.CBLINK +
                              " LED is ON " + bcolors.ENDC + ' <<')
             sys.stdout.flush()
         elif response.upper() == "OFF" or response.upper() == b'OFF':
-            GPIO.output(LED_IOPIN, GPIO.LOW)
+#            GPIO.output(LED_IOPIN, GPIO.LOW)
             sys.stdout.write('\r >>' + bcolors.CRED + bcolors.BOLD +
                              ' LED is OFF ' + bcolors.ENDC + ' <<')
             sys.stdout.flush()

@@ -30,3 +30,4 @@ tutorials/cicd-datalake-part-1/testdata/
 target/
 *.iml
 *.pem
+__pycache__/
