@@ -14,7 +14,7 @@ Repository `git clone https://github.com/GoogleCloudPlatform/community.git`
 
 #### Steps in VirtualMachine:
 
-* `sudo apt install git net-tools python3 python3-pip build-essential libssl-dev libffi-dev python3-dev python3-venv`
+* `sudo apt install git python3 python3-pip build-essential libssl-dev libffi-dev python3-dev python3-venv`
 * `git clone https://github.com/xv2/GoogleCloudIoT.git`
 * `cd GoogleCloudIoT/cloud-iot-gateways-rpi`
 * if needed regenerate your rsa keys `./generate_keys.sh` and set public key in your gateway authentication in Google Cloud IoT Console
